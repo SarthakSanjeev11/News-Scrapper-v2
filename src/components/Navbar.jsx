@@ -96,7 +96,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed w-full bg-gray-100 shadow-md z-50">
-        <div className="w-[90%]  mx-auto  pl-6 lg:px-8">
+        <div className="w-[90%]  mx-auto  pl-6 lg:px-8 ">
           <div className="flex justify-between items-center py-1">
             <div className="lg:block hidden" onClick={() => router.push("/")}>
               <Image
@@ -129,12 +129,14 @@ const Navbar = () => {
 
                   />
                 <div
-                  className={`absolute -right-16 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-transform transform ${
+                  className={`absolute -right-16 left-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-transform transform ${
                     isLanguageDropdownOpen
                       ? "opacity-100 scale-100 pointer-events-auto"
                       : "opacity-0 scale-95 pointer-events-none"
-                  } duration-200 ease-out md:m-4 md:w-80 m-2`}
+                  } duration-200 ease-out md:m-4 md:w-80 m-2 w-72`}
+              
                 >
+
                   <div className="m-2">
                     <p className="text-center">Select Preferred Language</p>
                     <div className="grid grid-cols-2">
