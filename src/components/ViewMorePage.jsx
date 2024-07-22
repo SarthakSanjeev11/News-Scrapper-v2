@@ -44,7 +44,7 @@ const ViewMorePage = () => {
   // console.log("model",model)
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between pt-24 lg:ml-56 mr-56 mb-10 ">
+    <div className="flex min-h-screen flex-col items-center justify-between pt-24 lg:ml-56 lg:mr-56 mb-10 ">
       <div className="">
           <div className="relative bg-clip-border rounded-xl p-4 bg-white text-gray-700 w-[100%] mx-auto flex-row">
             <div className="relative w-full h-full m-0 overflow-hidden text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">

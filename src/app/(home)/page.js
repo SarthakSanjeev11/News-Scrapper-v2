@@ -5,11 +5,11 @@ import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { fetchRSSFeed, shuffleArray } from "@/utils/shuffelArray";
 import { useEffect, useState } from "react";
 
-
 export default function Home() {
-  // const [feed, setFeed] = useState([]);
-  const dispatch = useAppDispatch()
-  const {sidebarUrl, feed} = useAppSelector((store) => store.sidebar);
+  const dispatch = useAppDispatch();
+  const { sidebarUrl, feed } = useAppSelector((store) => store.sidebar);
+
+  console.log(sidebarUrl);
 
   useEffect(() => {
     const fetchAllFeeds = async () => {
@@ -36,10 +36,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 pt-24">
       <div className="lg:w-11/12 w-full mx-auto flex flex-col items-center gap-10">
-        <div className="w-full   gap-4">
+        <div className="w-full  grid lg:grid-cols-2 grid-cols-1  gap-4">
           {feed &&
             feed.length > 0 &&
-            feed.map((data, index) => <Card index={index} key={index} data={data} />)}
+            feed.map((data, index) => (
+              <div key={index} >  <Card index={index} key={index} data={data} /></div>
+            ))}
         </div>
       </div>
     </main>

@@ -66,7 +66,7 @@ function SideBar({ filterLanguage, }) {
       </div>
       <div>
         <div
-          className={`lg:hidden top-4 left-1 duration-300 rounded-r-full z-50 fixed`}
+          className={`lg:hidden top-5 left-1 duration-300 rounded-r-full z-50 fixed`}
           onClick={() => setOpen(!open)}
         >
           {!open ? (

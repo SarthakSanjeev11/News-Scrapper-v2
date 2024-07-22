@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "../../../src/app/globals.css";
-import Navbar from "@/components/Navbar";
 import SideBar from "@/components/Sidebar";
 import StoreProvider from "../StoreProvider";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <StoreProvider>
           <Navbar />
           <div className="lg:flex  ">
-            <div className="lg:mt-16">
+            <div className="lg:mt-14">
               <SideBar />
             </div>
             <div className=" lg:ml-56 ">{children}</div>

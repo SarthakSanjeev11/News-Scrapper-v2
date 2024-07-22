@@ -1,8 +1,5 @@
 "use client"
 import React, { useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import { setLoggedInUser, setLogIn } from "../redux/fetchSlice";
-// import { useDispatch, useSelector } from "react-redux";
 import { account, ID  } from "../appwrite/config";
 import { FaEye, FaEyeSlash  } from "react-icons/fa";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
@@ -133,7 +130,7 @@ const SignUp = () => {
                 </div>
                 <p className="mt-6 text-xs text-gray-600 text-center">
                   Already have an account?{" "}
-                  <Link href="/SignIn">
+                  <Link href="/signIn">
                     <span className="text-blue-900 font-semibold">Log in</span>
                   </Link>
                 </p>

@@ -95,9 +95,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed w-full bg-gray-100 shadow-md z-50 pb-4">
+      <div className="fixed w-full bg-gray-100 shadow-md z-50 ">
         <div className="w-[90%]  mx-auto  pl-6 lg:px-8">
-          <div className="flex justify-between items-center py-1">
+          <div className="flex justify-between items-center m-2">
             <div className="lg:block hidden" onClick={() => router.push("/")}>
               <Image
                 src="/assets/TGN.png"
@@ -187,7 +187,7 @@ const Navbar = () => {
                       <FaUserCircle className="relative w-8 h-8" />
                     </Link>
                     {isHovered && (
-                      <div className="absolute w-40 bg-white rounded-lg shadow-lg ring-1 ring-gray-300 divide-y divide-gray-200">
+                      <div className="absolute w-40 bg-white rounded-lg shadow-lg right-0 divide-y divide-gray-200">
                         <Link
                           href="/my-profile"
                           className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100"
@@ -210,7 +210,7 @@ const Navbar = () => {
                     className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-full select-none hover:bg-gray-900/10 active:bg-gray-900/20"
                   >
                     Log In
-                    <FaRegUserCircle className="w-4 h-4" />
+                    <FaRegUserCircle className="w-8 h-8" />
                   </Link>
                 )}
               </div>
